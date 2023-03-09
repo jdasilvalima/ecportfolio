@@ -5,9 +5,9 @@
     </i>
     <div class="details">
       <h3>
-        <slot name="heading"></slot>
+        YES <slot name="heading"></slot>
       </h3>
-      <slot></slot>
+      NO <slot></slot>
     </div>
   </div>
 </template>

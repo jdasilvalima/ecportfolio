@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="home">
+    <p>You are in the Home View</p>
   </main>
 </template>
+
+<style>
+  .home{
+    padding-top: 10rem;
+  }
+</style>
