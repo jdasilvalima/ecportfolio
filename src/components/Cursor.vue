@@ -35,6 +35,7 @@ onUnmounted(() => {
   opacity: .85;
   height: 1rem;
   width: 1rem;
+  z-index: -1;
 }
 
 .cursor div {
@@ -59,14 +60,14 @@ onUnmounted(() => {
 
 .colorOne {
   animation: 10s colorOne linear infinite;
-  background: linear-gradient(90deg,#c7003b 1.98%,#c7003b 1.99%,#900c3e 100%);
+  background: linear-gradient(90deg,#00bac7 1.98%,#00bac7 1.99%,#0c6f90 100%);
   opacity: .8;
   filter: blur(127px)
 }
 
 .colorTwo {
   animation: colorTwo 6s linear infinite;
-  background: linear-gradient(90deg,#ff873c 1.98%,#ff873c 1.99%,#900c3e 100%);
+  background: linear-gradient(90deg,#046dde 1.98%,#046dde  1.99%,#0c6f90 100%);
   opacity: .8;
   filter: blur(127px)
 }
