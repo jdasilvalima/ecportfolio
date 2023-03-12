@@ -5,11 +5,38 @@
   padding: 0;
 }
 
-a,
-.green {
+a {
+  color: var(--vt-c-white-soft);
   text-decoration: none;
-  color: rgb(6, 174, 163);
-  transition: 0.4s;
+  outline: none;
 }
 
+.link {
+  position: relative;
+  white-space: nowrap;
+}
 
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+}
+
+.link::before {
+  content: '';
+}
+
+.link__metis::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.link__metis:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
